@@ -60,7 +60,7 @@ class EmojiTableViewController: UITableViewController {
         let emoji = emojis[indexPath.row]
         
         cell.update(with: emoji)
-        
+            
         cell.showsReorderControl = true
         
         return cell
