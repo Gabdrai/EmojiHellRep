@@ -37,13 +37,13 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2u9-aK-MYr" userLabel="Vertical Stack">
                                                     <rect key="frame" x="27" y="0.0" width="348" height="41"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNW-yC-poz">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNW-yC-poz" userLabel="Name Label">
                                                             <rect key="frame" x="0.0" y="0.0" width="348" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usf-UG-9ZL">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usf-UG-9ZL" userLabel="Description Label">
                                                             <rect key="frame" x="0.0" y="20.5" width="348" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -60,6 +60,11 @@
                                         <constraint firstItem="afe-26-qN0" firstAttribute="leading" secondItem="nv7-Ct-FiO" secondAttribute="leading" id="Qxj-hF-hrj"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="usf-UG-9ZL" id="VvR-y9-OUf"/>
+                                    <outlet property="nameLabel" destination="wNW-yC-poz" id="w2B-CW-T1O"/>
+                                    <outlet property="symbolLabel" destination="Ceu-D7-YkN" id="aC6-ZD-pGl"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
